@@ -1,5 +1,4 @@
-@import url('fonts.css');
-/* @font-face {
+@font-face {
   font-family: DMSerifTextNormal;
   font-weight: 400;
   font-style: normal;
@@ -11,21 +10,4 @@
   font-weight: 400;
   font-style: italic;
   src:url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
-} */
-
-* {
-  box-sizing: border-box;
-}
-body {
-  margin: 0;
-  padding: 0;
-  background: hsl(100,0%,34%);
-  color: hsl(30,95%,98%);
-  font-family: DmSeriff;
-}
-h1 {
-  font-family: DMSerifTextNormal, serif;
-}
-.container {
-  padding: 5px 10px;
 }

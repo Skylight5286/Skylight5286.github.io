@@ -1,31 +1,43 @@
 @import url('fonts.css');
-/* @font-face {
-  font-family: DMSerifTextNormal;
-  font-weight: 400;
-  font-style: normal;
-  src:url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
-}
-
-@font-face {
-  font-family: DMSerifTextItalic;
-  font-weight: 400;
-  font-style: italic;
-  src:url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
-} */
-
 * {
   box-sizing: border-box;
 }
 body {
   margin: 0;
   padding: 0;
-  background: hsl(100,0%,34%);
+  background: hsl(200,33%,10%);
   color: hsl(30,95%,98%);
-  font-family: DmSeriff;
+  font-family: "Saira", sans-serif;
+  font-style: normal;
 }
-h1 {
-  font-family: DMSerifTextNormal, serif;
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 .container {
   padding: 5px 10px;
+  width: 100%;
+}
+#my-pic {
+  background-color: hsl(67,40%,17%);
+  height: 200px;
+}
+#my-pic img {
+  max-width: 100%;
+  height: 200px;
+}
+
+@media screen and (min-width:800px) {
+  .container {
+    padding: 10px 20px;
+  }
+  h1{
+    font-size: 4em;
+    font-weight: 150%;
+  }
+  h4,p,li {
+    font-size: 150%;
+    font-weight: 120%;
+  }
 }

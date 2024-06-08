@@ -1,13 +1,13 @@
-@font-face {
-  font-family: DMSerifTextNormal;
-  font-weight: 400;
-  font-style: normal;
-  src:url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
-}
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@100..900&display=swap');
 
-@font-face {
-  font-family: DMSerifTextItalic;
-  font-weight: 400;
-  font-style: italic;
-  src:url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+/* <uniquifier>: Use a unique and descriptive class name
+<weight>: Use a value from 100 to 900 */
+
+.saira {
+  font-family: "Saira", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+  font-variation-settings:
+  "wdth" 100;
 }

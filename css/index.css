@@ -3,10 +3,12 @@
   box-sizing: border-box;
 }
 body {
+  --color: hsl(30,95%,98%);
+  --bg-color: hsl(200,33%,10%);
   margin: 0;
   padding: 0;
-  background: hsl(200,33%,10%);
-  color: hsl(30,95%,98%);
+  background: var(--bg-color);
+  color: var(--color);
   font-family: "Saira", sans-serif;
   font-style: normal;
 }
@@ -16,8 +18,8 @@ body {
   display: table;
 }
 .container {
-  padding: 5px 10px;
   width: 100%;
+  /* background-color: hsl(200,53%,16%); */
 }
 #my-pic div {
   width: 40%;
@@ -35,10 +37,22 @@ body {
   max-width: 100%;
   height: auto;
 }
+li,
+#my-pic div,
+.container {
+  padding: 5px 16px;
+}
+a {
+  text-decoration: none;
+  color: var(--color);
+}
+
 
 @media screen and (min-width:993px) {
-  .container {
-    padding: 10px 20px;
+  .container,
+  li,
+  #my-pic div {
+    padding: 10px 32px;
   }
   h1 {
     font-size: 4em;
@@ -48,7 +62,7 @@ body {
     font-size: 150%;
     font-weight: 120%;
   }
-  #my-pic div{
+  #my-pic div {
     width: 100%;
   }
 }
